@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div.color1 {
+            background-color: rgb(5, 5, 5);
+            color: rgb(255, 0, 0);
+            padding: 5px;
+            border: solid 2px white;
+            margin: 2px;
+            font-size: large;
+            width: 345px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button>◀</button>
+        <img src="img/head1.png">
+        <button>▶</button>
+    </div>
+
+    <div>
+        <button>◀</button>
+        <img src="img/body1.png">
+        <button>▶</button>
+    </div>
+
+    <div>
+        <button>◀</button>
+        <img src="img/legs1.png">
+        <button>▶</button>  
+
+
+
+        
+    <h1>Måter å gjøre css på</h1>
+
+    <li>Inline css</li>
+    <li>Regler for alle tagger</li>
+    <li>regler for markerte tagger</li>
+    <li>I egen fil</li>
+
+    <h3>Noen vanlige stiler</h3>
+
+    <ul>
+        <li><tt>Background-color</tt></li>
+        <li><tt>Color</tt></li>
+        <li><tt>Padding</tt></li>
+        <li><tt>Margin</tt></li>
+        <li><tt>Border</tt></li>
+        <li><tt>Text-align</tt></li>
+        <li><tt>Font-size</tt></li>
+    </ul>
+
+    <div class="color1">
+        Viste du at haien er minder farlig enn en delfin?
+    </div>
+
+
+    <div class="card"></div>
+    <div class="header" onclick="Mer1()">Overskrift 1</div>
+    <div id="tag1"></div>
+    </div>
+
+    <div class="card"></div>
+    <div class="header" onclick="Mer2()">Overskrift 2</div>
+    <div id="tag2"></div>
+    </div>
+
+    <script>
+        function Mer1() {
+            BlankAll();
+            document.getElementById('tag1').innerHTML = `HEI`;
+
+        }
+
+        function Mer2() {
+            BlankAll();
+            document.getElementById('tag2').innerHTML = `hva skjer?`;
+
+        }
+
+        function BlankAll() {
+            document.getElementById('tag1').innerHTML = ``;
+            document.getElementById('tag2').innerHTML = ``;
+
+        }
+
+
+    </script>
+ function shownumber1() {
+    BlankAll();
+    document.getElementById('tag5').innerHTML =  /*HTML*/
+        ` <button onclick="shownumber4()">◀</button>
+
+<div style="width: 40px; text-align: center;"> 
+  1
+</div>
+
+<button onclick="shownumber2()">▶</button>
+
+`;
+}
+
+
+function shownumber2() {
+    BlankAll();
+    document.getElementById('tag5').innerHTML =  /*HTML*/
+        ` <button onclick="shownumber1()">◀</button>
+
+<div style="width: 40px; text-align: center;"> 
+  2
+</div>
+
+<button onclick="shownumber3()">▶</button>
+
+`;
+}
+
+
+function shownumber3() {
+    BlankAll();
+    document.getElementById('tag5').innerHTML =  /*HTML*/
+        ` <button onclick="shownumber2()">◀</button>
+
+<div style="width: 40px; text-align: center;"> 
+  3
+</div>
+
+<button onclick="shownumber4()">▶</button>
+
+`;
+}
+
+
+function shownumber4() {
+    BlankAll();
+    document.getElementById('tag5').innerHTML =  /*HTML*/
+        ` <button onclick="shownumber3()">◀</button>
+
+<div style="width: 40px; text-align: center;"> 
+  4
+</div>
+
+<button onclick="shownumber1()">▶</button>
+
+`;
+}
+
+        
+    ()
+
+<div id="cardHtml">
+    
+</div>
+   start/body1.png
+</div>
+</body>
+
+</html>
