@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<h1>HVOR MANGE GANGER KLARER DU Å TRYKKE?</h1>
+<style>
+    div.unos1 {
+        width: 1%;
+        padding: 5px;
+        display: grid;
+        text-align: center;
+       
+        
+    }
+
+    div.box {
+        width: 50px;
+        padding: 10px;
+        background-color: aqua;
+        font-size: x-large;
+        font-stretch: wider;
+    }
+
+  
+</style>
+
+<head>
+
+</head>
+
+<body>
+
+    
+
+     <div class="unos1">
+            <button onclick="plus()">+1</button>
+            <div id="output" class="box">0</div>
+            <button onclick="minus()">-1</button>
+     </div>
+     
+
+    <script>
+        var outputDiv = document.getElementById('output');
+        var numToShow = 0;
+
+
+
+        function minus() {
+            numToShow--;
+            outputDiv.innerHTML = numToShow
+
+
+        }
+
+        function plus() {
+            numToShow++;
+            outputDiv.innerHTML = numToShow
+
+        }
+
+
+        function test(){
+            document.getElementById(tests1).innerHTML = ``
+
+           
+        }
+
+       
+
+    </script>
+
+
+
+</body>
+
+</html>
